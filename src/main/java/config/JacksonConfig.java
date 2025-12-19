@@ -1,0 +1,20 @@
+
+package config;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.module.paramnames.ParameterNamesModule;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+/**
+ *
+ * @author ANTONIO
+ */
+@Configuration
+public class JacksonConfig {
+      @Bean
+    public ObjectMapper objectMapper() {
+        return new ObjectMapper()
+            .registerModule(new ParameterNamesModule());
+    }
+}
