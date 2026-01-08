@@ -35,7 +35,7 @@ public class QwenFallbackService implements CodeFeedbackService {
     @Override
     public Mono<CodeFeedbackResponseDto> getFeedback(CodeFeedbackRequestDto request) {
         // Simulación basada en contenido (ej: código que contiene 'var i')
-        if (request.code().contains("var i") && request.code().contains("setTimeout")) {
+        if (request.getCode().contains("var i") && request.getCode().contains("setTimeout")) {
             return Mono.just(DUMMY_DATA.get("js-loop-var"));
         }
         return Mono.just(new CodeFeedbackResponseDto(

@@ -7,7 +7,7 @@ package com.axcumet.codefeedback.controller;
 import com.axcumet.codefeedback.dto.CodeFeedbackRequestDto;
 import com.axcumet.codefeedback.dto.CodeFeedbackResponseDto;
 import com.axcumet.codefeedback.service.CodeFeedbackService;
-import io.swagger.v3.oas.annotations.parameters.RequestBody;
+import org.springframework.web.bind.annotation.RequestBody;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

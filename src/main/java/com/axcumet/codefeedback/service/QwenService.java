@@ -63,7 +63,7 @@ public class QwenService {
         ```
 
         Responde en JSON estricto con campos: {"concept": "...", "hint": "...", "commonMistakes": ["...", "..."]}
-        """.formatted(req.topic(), req.language(), req.language(), req.code());
+        """.formatted(req.getTopic(), req.getLanguage(), req.getLanguage(), req.getCode());
     }
 
     private Object buildRequestBody(String prompt) {

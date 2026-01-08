@@ -21,7 +21,6 @@ import lombok.experimental.Accessors;
 @AllArgsConstructor
 @NoArgsConstructor
 
-@Accessors(fluent = true)
 public class CodeFeedbackRequestDto {
 
     @NotBlank(message = "El lenguaje no debe estar vacío")
